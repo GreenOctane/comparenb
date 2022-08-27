@@ -12,6 +12,12 @@ def comparenb():
 	nb1 = input()
 	nb2 = input()
 
+	### AJOUT D'UNE CONDITION DEMANDANT UN NOMBRE SUR LE MEME NOMBRE DE BIT ###
+	while len(nb1) != len(nb2):
+		print("vos deux nombres ne sont pas sur le même nombre de bit, veuillez les entrer à nouveau :")
+		nb1 = input("nombre 1 =")
+		nb2 = input("nombre 2 =")
+
 
 	listenb1 = [c for c in nb1]
 	listenb2 = [c for c in nb2]
