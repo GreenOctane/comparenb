@@ -14,13 +14,8 @@ def comparenb():
 	nb2 = input()
 
 
-	listenb1 = []
-	for i in nb1:
-		listenb1.append(i)
-
-	listenb2 = []
-	for x in nb2:
-		listenb2.append(x)
+	listenb1 = [c for c in nb1]
+	listenb2 = [c for c in nb2]
 
 
 	# Si les deux nombres sont identiques
