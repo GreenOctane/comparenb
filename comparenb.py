@@ -2,7 +2,7 @@
 # Nom ......... : comparenb.py
 # Rôle ........ : Programme destiné à comparer l'ordre de grandeur entre deux nombres en complément à 2.
 # Auteur ...... : Faure Alexandre
-# Version ..... : V0.4 du 27/08/2022
+# Version ..... : V0.5 du 27/08/2022
 # Licence ..... : Réalisé dans le cadre du cours de Architecture des Ordinateurs et d'Outils Collaboratifs. (L1)
 # Utilisation . : Après avoir définit la fonction comparenb, entrez comparenb(), le terminal vous demandera de rentrer deux nombres. 
 #********************************************************/
@@ -107,11 +107,5 @@ def comparenb():
 					print("Le deuxième nombre :", nb2, "est le plus grand des deux.")
 					listenb1.clear()
 					listenb2.clear()
-
-
-	else :
-		print("Vous n'avez pas entré un nombre binaire en complément à deux. Veuillez réessayer")
-
-
 
 comparenb()
