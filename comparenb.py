@@ -1,12 +1,11 @@
 # *******************************************************
-# Nom ......... : Chapitre3_Exercice14_FINAL.py
+# Nom ......... : comparenb.py
 # Rôle ........ : Programme destiné à comparer l'ordre de grandeur entre deux nombres en complément à 2.
 # Auteur ...... : Faure Alexandre
-# Version ..... : V0.1 du 21/05/2022
-# Licence ..... : Réalisé dans le cadre du cours de Architecture des Ordinateurs (L1)
-# Utilisation . : Après avoir définit la fonction comparenb, entrer comparenb(), le terminal demandera de rentrer deux nombres. 
+# Version ..... : V0.2 du 27/08/2022
+# Licence ..... : Réalisé dans le cadre du cours de Architecture des Ordinateurs et d'Outils Collaboratifs. (L1)
+# Utilisation . : Après avoir définit la fonction comparenb, entrerz comparenb(), le terminal vous demandera de rentrer deux nombres. 
 #********************************************************/
-
 def comparenb():
 
 	print("Veuillez entrer deux nombres écrit en complément à deux ayant le même nombre de bit")
