@@ -2,10 +2,18 @@
 # Nom ......... : comparenb.py
 # Rôle ........ : Programme destiné à comparer l'ordre de grandeur entre deux nombres en complément à 2.
 # Auteur ...... : Faure Alexandre
-# Version ..... : V0.3 du 27/08/2022
+# Version ..... : V0.4 du 27/08/2022
 # Licence ..... : Réalisé dans le cadre du cours de Architecture des Ordinateurs et d'Outils Collaboratifs. (L1)
 # Utilisation . : Après avoir définit la fonction comparenb, entrez comparenb(), le terminal vous demandera de rentrer deux nombres. 
 #********************************************************/
+
+### Definition des conditions d'entrée ###
+def validate(s):
+	for i in s:
+		# On veut uniquement des 0 et des 1
+		if not (str.isdigit(i) and int(i) <= 1):
+			return False
+
 def comparenb():
 
 	print("Veuillez entrer deux nombres écrit en complément à deux ayant le même nombre de bit")
@@ -16,6 +24,15 @@ def comparenb():
 	while len(nb1) != len(nb2):
 		print("vos deux nombres ne sont pas sur le même nombre de bit, veuillez les entrer à nouveau :")
 		nb1 = input("nombre 1 =")
+		nb2 = input("nombre 2 =")
+
+	### UTILISATION DE LA FONCTION VALIDATE ### ### AXE D'AMELIORATION ==> INTEGRER LA DEMANDE MEME NOMBRE BIT DANS VALIDATE ###
+	while validate(nb1) == False:
+		print("Vous avez entré un caractère différent de 0 ou 1 \nVeuillez enter de nouveau le premier nombre :")
+		nb1 = input("nombre 1 =")
+	
+	while validate(nb2) == False:
+		print("Vous avez entré un caractère différent de 0 ou 1 \nVeuillez enter de nouveau le deuxième nombre :")
 		nb2 = input("nombre 2 =")
 
 
